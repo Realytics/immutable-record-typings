@@ -25,8 +25,8 @@ Recommended way is adding `"./node_modules/immutable-record-typings/*"` to `incl
 You can also `import 'immutable-record-typings'` in entry file of your application instead of adding it to `tsconfig.json`.
 
 We don't provide it as a `@types` package because it would be not compatible with current typings.
-So the safer way is to provide it as separate npm package.
-Also Immutable v4 is on the way with similar typings :)
+So the safer way is to provide it as a separate npm package.
+Also, Immutable v4 is on the way with similar typings :)
 
 ## Features
 This package adds generic type to the `Record` definition. Thanks to this, we can make records type safe 
@@ -39,7 +39,7 @@ import { User } from './User';
 import { Comment } from './Comment';
 
 // we use PascalCase because of names conflicts issue in records - 
-// for example groupBy field will not work, because Record already has groupBy method
+// for example, a groupBy field will not work, because Record already has the groupBy method
 export interface Post {
   Title: string;
   Author: User;
@@ -81,13 +81,12 @@ const postA = PostRecord({ Title: 'TypeScript is awesome!' });
 const postB = new PostRecord({ Title: 'Immutable.js too' });
 ```
 
-To extend record class, use `extends` keyword:
+To extend record class, we can use `extends` keyword:
 ```typescript
 import { PostRecord } from './Post';
 import { UserRecord } from './User';
 
 export class AwesomePost extends PostRecord {
-  
   get Title(): string {
     return `[AWESOME NEWS] ${this.get('Title')}!`;
   }

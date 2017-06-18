@@ -2,6 +2,8 @@ language: node_js
 deploy:
   provider: npm
   email: opensource@realytics.io
+  api_key:
+    secure: soRUrrHfOZ6j2IkWUfwXlKTjbvJ9Xa3a5W93UPpCXWHrFdOPT0mJKDLTgYocN5wvnc28QQ3l+BTkmGQxebxeu3ryBIjg+qWdVfoKOSGR9K4u39cOqgh7IfJ1rQ9OaPEGXFhMyJOaHP4DzwUVMxK5aaq8jj5e2gy1OCSWBXBzTFemE+y1a4M3SQEdpKlFzIggePnlWqu96Wp+Y3is/NOIcjE7Rfiu0zyNBJiEL+oP/Gd/A5b/hJY71wcDINbQmZXIFQ/2aK2VUOLnIbYQfZqjkRV5qeqVwr+8UTkp2DrG/ZndbhAiMyU+HNlUlMKVRK1QT+rU1oR//4iOtzKDe7bgvWnJerYkglqDXXEDQQNUEzOuLPbQPcuzeY9abGcXQWva/0ivAeLfEyoUOr4qzl7TCHTFBDcRtsI/857p+PHb/Yanxfplp1WyFKwBvIPY/3dibTbHOqnhiVAOuFLInaGakEoA5huaUI1aHLMMY2gp/vZJs4tv1G5BlTAT1zMsAueFJ6eDOmHB399hk7e9qnKqAxBOpMVhNd7YvXboYGe1bQN4gP1uZHYtTvL7O4zj87owpHVlrxYNf6LlH/bQIktXui3Z0+2rGMQ3Cgzj3zQ1mZkcKy8JrvjFz601Z73VlY5xa7dwDndN6SFqXAjT4AdKISkbFYpff9MbgB1JQgEIupE=
   on:
     tags: true
     branch: master
