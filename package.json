@@ -1,0 +1,29 @@
+{
+  "name": "immutable-record-typings",
+  "version": "0.1.0",
+  "description": "Provides better typings for immutable record.",
+  "typings": "index.d.ts",
+  "repository": {
+    "url": "https://github.com/Realytics/immutable-record-typings.git",
+    "type": "git"
+  },
+  "keywords": [
+    "immutable",
+    "record",
+    "typescript",
+    "type"
+  ],
+  "author": "Piotr Oleś <piotrek.oles@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Realytics/immutable-record-typings/issues"
+  },
+  "peerDependencies": {
+    "immutable": "^3.8.1",
+    "typescript": "^2.3.0"
+  },
+  "devDependencies": {
+    "immutable": "^3.8.1",
+    "typescript": "^2.3.0"
+  }
+}

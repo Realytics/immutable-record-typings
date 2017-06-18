@@ -1,0 +1,7 @@
+language: node_js
+deploy:
+  provider: npm
+  email: opensource@realytics.io
+  on:
+    tags: true
+    branch: master
